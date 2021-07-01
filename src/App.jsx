@@ -3,11 +3,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
 } from 'react-router-dom';
 
 import './App.css';
 
+import NavItem from './components/navbar/NavItem';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Experience from './components/experience/Experience';
@@ -22,20 +22,9 @@ function App() {
             lg:justify-start lg:gap-40 lg:ml-5
             xl:gap:60 xl:text-2xl"
           >
-            <li>
-              <NavLink
-                to="/about"
-                activeClassName="active"
-              >
-                ABOUT
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">PROJECTS</NavLink>
-            </li>
-            <li>
-              <NavLink to="/experience">EXPERIENCE</NavLink>
-            </li>
+            <NavItem title="about" />
+            <NavItem title="projects" />
+            <NavItem title="experience" />
           </ul>
         </nav>
 
