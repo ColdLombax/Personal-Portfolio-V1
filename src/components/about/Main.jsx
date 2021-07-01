@@ -1,8 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import firstSteps from '../../assets/illustrations/first-steps.svg';
+import Content from './Content';
 
-function Main() {
+function Main({ content }) {
+  let contentValue;
+  switch (content) {
+    case 1:
+      contentValue = 'Beginnings';
+      break;
+    case 2:
+      contentValue = 'My Stack';
+      break;
+    case 3:
+      contentValue = 'Facts';
+      break;
+    default:
+      break;
+  }
   return (
     <div
       className="
@@ -11,31 +26,13 @@ function Main() {
     lg:h-4/6 lg:w-8/12
     xl:h-5/6 xl:w-6/12"
     >
-      <p className="text-xs text-gray-300">Beginnings</p>
-      <h1 className="font-bold w-8/12 text-xl pb-5">
-        Hello World,
-        <br />
-        I&apos;m
-        {' '}
-        <span className="text-green-light">John Phillips</span>
-      </h1>
-      <section>
-        <p className="text-sm w-8/12">
-          I&apos;m a
-          {' '}
-          <span className="text-green-light">self-taught/learning</span>
-          {' '}
-          front-end developer
-          , I had taken my first
-          steps on
-          {' '}
-          <span className="text-green-light">8th August 2020</span>
-          , and have enjoyed it ever since.
-        </p>
-      </section>
-      <img src={firstSteps} alt="" className="absolute bottom-0 right-5 w-5/12 z-10" />
+      <Content subHeader={contentValue} />
     </div>
   );
 }
+
+Main.propTypes = {
+  content: PropTypes.number.isRequired,
+};
 
 export default Main;
