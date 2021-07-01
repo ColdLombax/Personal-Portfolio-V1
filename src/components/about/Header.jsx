@@ -4,16 +4,16 @@ import lostOnlineSvg from '../../assets/illustrations/lost-online.svg';
 
 function Header() {
   return (
-    <div>
+    <header>
       <img
         src={lostOnlineSvg}
         alt=""
         className="
-        w-3/4 ml-auto
-        md:w-3/5
-        lg:w-2/6"
+        w-3/4 ml-auto relative top-16
+        md:w-3/6
+        lg:w-2/6 z-0"
       />
-    </div>
+    </header>
   );
 }
 
