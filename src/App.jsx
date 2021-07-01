@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div>
-        <nav className="text-white text-lg font-bold bg-purple-dark w-full p-5">
+        <nav className="text-white text-lg font-bold bg-purple-dark w-full p-5 absolute z-10">
           <ul className="
             flex justify-evenly gap-4
             lg:justify-start lg:gap-40 lg:ml-5
