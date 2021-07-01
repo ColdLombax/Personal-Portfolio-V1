@@ -16,5 +16,3 @@ function About() {
 }
 
 export default About;
-
-// Attempt to get the screen size working correctly so you can bottom left a curved image.
