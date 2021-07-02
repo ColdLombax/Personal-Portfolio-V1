@@ -1,18 +1,7 @@
-import React, { useState } from 'react';
-
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import React from 'react';
 
 function About() {
-  const [content, setContent] = useState(1);
-  return (
-    <div className="h-screen w-full absolute">
-      <Header />
-      <Main content={content} />
-      <Footer setContent={setContent} />
-    </div>
-  );
+  return <div />;
 }
 
 export default About;
