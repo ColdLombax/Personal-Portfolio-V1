@@ -10,10 +10,13 @@ function Experience() {
       <div className="bg-purple-light h-half-screen w-full flex flex-col items-center justify-end pb-5">
         <img src={waiting} alt="avatar waiting for work" className="w-8/12 mr-5" />
       </div>
-      <div className="text-center p-10 font-bold text-black-light">
+      <div className="text-center p-10 font-bold text-black-light flex flex-col items-center">
         <h3 className="text-2xl">Experience?</h3>
-        <hr className="w-full border-4 border-blue-light mt-2.5 mb-2.5" />
-        <p className="">
+        <hr
+          className="w-full border-4 border-blue-light mt-2.5 mb-2.5
+        md:w-8/12"
+        />
+        <p className="md:w-9/12">
           I currently have
           {' '}
           <span className="text-blue-dark">no ‘commercial’ experience.</span>
@@ -32,10 +35,13 @@ function Experience() {
         </p>
         <button className="mt-10 p-2 w-3/4 border-4 border-blue-light font-bold text-2xl hover:bg-blue-light">GITHUB</button>
       </div>
-      <div className="text-center p-10 pt-0 font-bold text-black-light">
+      <div className="text-center p-10 pt-0 font-bold text-black-light flex flex-col items-center">
         <h3 className="text-2xl">Start my Career?</h3>
-        <hr className="w-full border-4 border-blue-light mt-2.5 mb-2.5" />
-        <p>
+        <hr
+          className="w-full border-4 border-blue-light mt-2.5 mb-2.5
+        md:w-8/12"
+        />
+        <p className="md:w-9/12">
           I’m an
           {' '}
           <span className="text-blue-dark">aspiring developer with a passion for frontend development.</span>
