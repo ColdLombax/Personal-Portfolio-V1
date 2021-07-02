@@ -10,6 +10,10 @@ module.exports = {
         'blue-light': '#19CDFF',
         'green-dark': '#2F9A2D',
         'green-light': '#7FFF7C',
+        'black-light': '#2F2E41',
+      },
+      height: {
+        'half-screen': '50vh',
       },
     },
   },
