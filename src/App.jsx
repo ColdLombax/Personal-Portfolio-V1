@@ -7,10 +7,10 @@ import {
 
 import './App.css';
 
-import NavItem from './components/navbar/NavItem';
-import About from './components/about/About';
-import Projects from './components/projects/Projects';
-import Experience from './components/experience/Experience';
+import NavItem from './components/Navbar/NavItem';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
 
 function App() {
   return (
