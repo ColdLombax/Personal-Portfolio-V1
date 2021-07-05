@@ -15,6 +15,9 @@ module.exports = {
       height: {
         'half-screen': '50vh',
       },
+      backgroundImage: {
+        'desktop-container': 'url(/src/assets/illustrations/curve-container.svg)',
+      },
     },
   },
   variants: {
